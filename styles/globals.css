@@ -1,9 +1,20 @@
+html {
+  --red: #f71b1b;
+  --dark-red: #cc0000;
+  --blue: #3b4cca;
+  --yellow: #ffde00;
+  --dark-yellow: #bab7a1;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+  background: var(--blue);
+  font-size: 16px;
 }
 
 a {
