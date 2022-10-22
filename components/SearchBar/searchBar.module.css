@@ -1,0 +1,47 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  height: auto;
+}
+
+.bar {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  position: relative;
+  font-size: 1rem;
+  border-radius: 3px;
+  line-height: 1.5rem;
+}
+
+.label {
+  color: white;
+  margin-right: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 5px;
+  top: 0;
+  height: 100%;
+  width: auto;
+}
+
+.icon > svg {
+  fill: white;
+}
+
+.input {
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 10px 0;
+  padding-left: 30px;
+  color: white;
+  font-family: inherit;
+  width: 100%;
+}
