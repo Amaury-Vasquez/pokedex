@@ -25,7 +25,7 @@ export const PokeCard = (props: CardProps) => {
   };
 
   return (
-    <Link href={`/pokemon/${name}`}>
+    <Link href={`/pokemon/${num}`}>
       <a className={card}>
         <span className={number}>
           <MdOutlineCatchingPokemon /> {addCeros(num)}
