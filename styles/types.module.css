@@ -1,0 +1,71 @@
+.icon {
+  margin-left: 5px;
+}
+
+.fire {
+  fill: var(--red);
+}
+
+.flying {
+  fill: #93a3e8;
+}
+
+.normal {
+  fill: #d7d7ce;
+}
+
+.water {
+  fill: #6890f0;
+}
+
+.grass {
+  fill: #78c850;
+}
+
+.electric {
+  fill: #f8d030;
+}
+
+.fighthing {
+  fill: #c03028;
+}
+
+.poison {
+  fill: #a040a0;
+}
+
+.ground {
+  fill: #e0c068;
+}
+
+.fairy {
+  fill: #f0b6bc;
+}
+
+.psychic {
+  fill: #f85888;
+}
+
+.bug {
+  fill: #a8b820;
+}
+
+.rock {
+  fill: #b8a038;
+}
+
+.ghost {
+  fill: #705898;
+}
+
+.dark {
+  fill: #705848;
+}
+
+.dragon {
+  fill: #7038f8;
+}
+
+.steel {
+  fill: #b8b8d0;
+}
