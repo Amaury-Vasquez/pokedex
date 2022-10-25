@@ -8,7 +8,7 @@ export const useSearch = (callback: Function) => {
     e.preventDefault();
     const input = e.target.value;
     setValue(input);
-    callback(input);
+    callback(input.toLowerCase());
   };
   // Effects
 
