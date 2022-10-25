@@ -48,6 +48,7 @@
   height: 50px;
   width: 50px;
   position: relative;
+  inset: 0;
 }
 
 .bounceLoader > div {
@@ -56,7 +57,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: var(--dark-red);
+  background: var(--blue);
   opacity: 0.6;
   -webkit-animation: bounceKeyframes 2s ease-in-out infinite;
   animation: bounceKeyframes 2s ease-in-out infinite;
