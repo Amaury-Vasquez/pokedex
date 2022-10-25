@@ -1,0 +1,113 @@
+.content {
+  width: 100%;
+  padding: 0 200px;
+  height: 10px;
+}
+
+.pokemon {
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: repeating-linear-gradient(
+    to right bottom,
+    white 0%,
+    white 3%,
+    rgb(245, 245, 245) 3%,
+    rgb(245, 245, 245) 3%,
+    white 4%,
+    white 6%,
+    rgb(245, 245, 245) 6%,
+    rgb(245, 245, 245) 6%,
+    white 8%,
+    white 10%,
+    rgb(245, 245, 245) 11%,
+    rgb(245, 245, 245) 11%,
+    white 12%,
+    white 16%,
+    rgb(245, 245, 245) 16%,
+    rgb(245, 245, 245) 18%
+  );
+  padding: 30px 10%;
+}
+
+.info {
+  background: white;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pokeName {
+  color: #282828;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: inherit;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.artworkWrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textInfo {
+  height: fit-content;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.textInfo > * {
+  margin-bottom: 20px;
+}
+
+.textInfo:last-child {
+  margin-bottom: none;
+}
+
+.typeWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+.typeWrapper > span {
+  text-align: center;
+  font-weight: 600;
+}
+
+.pokeTypes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.typeSpan:first-child {
+  margin-right: 30px;
+}
+
+.typeSpan:last-child {
+  margin-right: none;
+}
+
+.typeSpan {
+  text-transform: capitalize;
+  font-weight: 600;
+  height: 100%;
+  width: fit-content;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 5px;
+  background: #282828;
+}
