@@ -1,12 +1,13 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { MdOutlineCatchingPokemon } from 'react-icons/md';
 
 import styles from './pokeCard.module.css';
-import { useImageLoad } from 'hooks/useImageLoad';
+import { addCeros } from 'utils/functions';
 import animation from 'styles/animation.module.css';
 
-const { spinLoader, fadeIn } = animation;
-const { card, number, pokeName, imgWrapper, image } = styles;
+const { fadeIn } = animation;
+const { card, number, pokeName, imgWrapper } = styles;
 
 interface CardProps {
   name: string;
@@ -15,30 +16,23 @@ interface CardProps {
 
 export const PokeCard = (props: CardProps) => {
   const { name, num } = props;
-  const { img, loaded } = useImageLoad(
-    `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${num}.png`
-  );
-  // Functions
-  const addCeros = (n: number) => {
-    let str = n > 100 ? '' : n > 10 ? '0' : '00';
-    return str + n.toString();
-  };
 
   return (
-    <Link href={`/pokemon/${num}`}>
-      <a className={card}>
+    <Link href={`/pokemon/${name}`}>
+      <div className={`${card} ${fadeIn}`}>
         <span className={number}>
           <MdOutlineCatchingPokemon /> {addCeros(num)}
         </span>
-        <span className={imgWrapper}>
-          {loaded ? (
-            <img className={`${image} ${fadeIn}`} src={img} alt={name} />
-          ) : (
-            <div className={spinLoader} />
-          )}
-        </span>
+        <div className={imgWrapper}>
+          <Image
+            src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${num}.png`}
+            alt={name}
+            width={475}
+            height={475}
+          />
+        </div>
         <span className={pokeName}>{name} </span>
-      </a>
+      </div>
     </Link>
   );
 };
