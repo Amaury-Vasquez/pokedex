@@ -1,8 +1,8 @@
-import { PokeCard } from 'components/PokeCard';
-import { SearchBar } from 'components/SearchBar';
+import { PokeCard } from './pokeCard';
+import { SearchBar } from './searchBar';
 import { usePokedex, Result } from 'hooks/usePokedex';
 
-import styles from './pokedex.module.css';
+import styles from 'styles/pokedex.module.css';
 import animation from 'styles/animation.module.css';
 
 const Pokedex = (props: { results: Result[] }) => {
