@@ -1,0 +1,16 @@
+.arrow {
+  border-right: 3px solid #dfdfdf;
+  border-bottom: 3px solid #dfdfdf;
+  width: 10px;
+  height: 10px;
+}
+
+.prev {
+  transform: rotate(135deg);
+  margin-right: 10px;
+}
+
+.next {
+  transform: rotate(-45deg);
+  margin-left: 10px;
+}
