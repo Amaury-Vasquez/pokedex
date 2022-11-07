@@ -1,16 +1,17 @@
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import dynamic from 'next/dynamic';
 import { ParsedUrlQuery } from 'querystring';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { Suspense } from 'react';
+import { FallbackScreen } from 'components/fallbackScreen';
 
-import { PokemonInfo } from 'components/PokemonInfo';
+const PokemonInfo = dynamic(() => import('components/Pokemon/index'));
 
 interface IParams extends ParsedUrlQuery {
   name: string;
 }
 
 const Pokemon = (props: { name: string }) => {
-  const router = useRouter();
   const { name } = props;
   const title = `${name} | Pokedex`;
 
@@ -20,7 +21,9 @@ const Pokemon = (props: { name: string }) => {
         <title> {title} </title>
         <meta name="description" content={`Information about ${name}`} />
       </Head>
-      <PokemonInfo name={name} />
+      <Suspense fallback={<FallbackScreen />}>
+        <PokemonInfo name={name} />
+      </Suspense>
     </>
   );
 };
@@ -45,7 +48,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { name } = context.params as IParams;
 
   return {
-    props: { name },
+    props: { name, key: name },
   };
 };
 export default Pokemon;
