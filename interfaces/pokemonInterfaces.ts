@@ -74,3 +74,8 @@ export interface PokemonData {
   types: PokemonType[];
   weight: number;
 }
+
+export interface PokeChain {
+  evolves_to: [];
+  species: Data;
+}
