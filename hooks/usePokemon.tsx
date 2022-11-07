@@ -50,21 +50,5 @@ export const usePokemon = (name: string | string[] | undefined) => {
     };
   }, [attempts, data, error]);
 
-  // useEffect(() => {
-  //   if (data) {
-  //     const fetchEvolveChain = async () => {
-  //       try {
-  //         const species = await fetchUrl(data.species.url);
-  //         const evolutionChain = await fetchUrl(species.evolution_chain.url);
-  //         console.log(evolutionChain);
-  //       } catch {
-  //         console.log('Error getting pokemon forms');
-  //       }
-  //     };
-  //     fetchEvolveChain();
-  //     // console.log(data);
-  //   }
-  // }, [data]);
-
   return { data, artwork, spritesImages };
 };
