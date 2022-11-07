@@ -1,0 +1,20 @@
+.label {
+  font-weight: 600;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 1.2rem;
+}
+
+.carousel {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  grid-row-gap: 10px;
+}
+
+.spriteWrapper {
+  padding: 5px;
+}
