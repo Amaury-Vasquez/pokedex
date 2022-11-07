@@ -57,7 +57,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: var(--blue);
+  background: #efefef;
   opacity: 0.6;
   -webkit-animation: bounceKeyframes 2s ease-in-out infinite;
   animation: bounceKeyframes 2s ease-in-out infinite;
