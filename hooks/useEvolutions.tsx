@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { fetchUrl, artworkUrl, baseUrl } from 'utils/functions';
-import { PokemonData, Data, PokeChain } from 'interfaces/pokemonInterfaces';
+import { PokemonData, Data } from 'interfaces/pokemonInterfaces';
 
 export interface Poke {
   name: string;
@@ -83,8 +83,6 @@ export const useEvolutions = (data: PokemonData) => {
         }
       })();
     }
-
-    // Simple effect cleanup
   }, [basePoke, evolutionChain]);
 
   return { basePoke, evolutionChain, loading };
