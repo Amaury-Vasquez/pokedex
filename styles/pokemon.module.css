@@ -173,3 +173,113 @@
 .evolWrapper > p {
   text-align: center;
 }
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 700px) {
+  .content {
+    padding: 0;
+  }
+
+  .pokemon {
+    padding: 15px;
+  }
+
+  .info {
+    display: block;
+    padding: 0;
+  }
+
+  .textInfo {
+    padding: 10px;
+  }
+
+  .abilities {
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .imgEvolWrapper {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .typeSpan {
+    padding: 15px;
+  }
+
+  .abilities {
+    flex-direction: column;
+  }
+
+  .closePokes {
+    padding: 0;
+    grid-gap: 5px;
+  }
+
+  .evolutions {
+    padding: 10px;
+  }
+
+  .pokeChain > svg {
+    font-size: 2rem;
+  }
+
+  .imgEvolWrapper {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .closePokes {
+    display: block;
+  }
+
+  .closePokes > * {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .pokeChain {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+  .content {
+    padding: 0;
+  }
+
+  .pokemon {
+    padding: 15px;
+    height: calc(100vh - 50px);
+  }
+
+  .abilities {
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .info {
+    padding: 15px 30px;
+  }
+
+  .textInfo {
+    padding: 10px 15px;
+  }
+
+  .imgEvolWrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .closePokes {
+    padding: 0;
+    grid-gap: 0px;
+  }
+}
