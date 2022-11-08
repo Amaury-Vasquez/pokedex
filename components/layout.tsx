@@ -11,7 +11,7 @@ export const Layout = (props: { children: JSX.Element }) => {
     <>
       <header className={header}>
         <Link href={'/'}>
-          <a className={pokemon}>Pokedex</a>
+          <a className={pokemon}>Kanto Pokedex</a>
         </Link>
       </header>
       <main className={content}>{children}</main>
