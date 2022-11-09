@@ -19,7 +19,7 @@ const Pokemon = (props: { name: string }) => {
     return (
       <div className={`${content}`}>
         <div className={`${pokemon} ${fadeIn}`}>
-          <div className={info}>
+          <article className={info}>
             <h1 className={pokeName}>
               {`N.º ${addCeros(data.id)} ${data.name}`}
             </h1>
@@ -35,7 +35,7 @@ const Pokemon = (props: { name: string }) => {
             </div>
             <Info data={data} sprites={spritesImages} />
             <Evolutions data={data} />
-          </div>
+          </article>
         </div>
       </div>
     );
