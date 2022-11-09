@@ -30,10 +30,10 @@
   padding: 30px;
   place-items: center;
   border-radius: 3px;
+  color: #282828;
 }
 
 .pokeName {
-  color: #282828;
   font-size: 2rem;
   text-align: center;
   font-weight: 500;
